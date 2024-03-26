@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+         <title>Train Opinons</title> 
+       <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+       </head>
+    <h1> My Ludicrous Train Opinions</h1>
+    <p>This website is purely a place for me to spout my opinions on different trains I have ridden in my life!</p>
+    <p>Press an image below for info</p>
+    <div class="dropdown">
+      <button class="dropbtn">Or select one from here</button>
+      <div class="dropdown-content">
+        <a href="index.HTML">Home</a>
+        <a href="745.HTML">Class 755 GA FLIRT</a>
+        <a href="171.HTML">Class 171 Turbostar</a>
+        <a href="395.HTML">Class 395 Javelin</a>
+        <a href="700.HTML">Class 700 Desiro City</a>
+        <a href="375.HTML">Class 375 Electrostar</a>
+        <a href="390.HTML">Class 390 Pendolino</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <a href="745.HTML">
+      <img src="755.jpg" alt="GA FLIRT trains" style="width:600px;height: 340px;">
+      </a>
+        <a href="171.HTML">
+          <img src="171.jpg" alt="Class 171 Turbostar" style="width:600px;height: 340px;;">
+          </a>
+          <a href="395.HTML">
+            <img src="395.jpg" alt="Class 395 Javellin" style=width:600px;height:340px;>
+            </a>
+    <br>
+    <a href="700.HTML">
+      <img src="700.jpg" alt="Class 700 Desiro City" style="width:600px;height: 340px;">
+      </a>
+        <a href="375.HTML">
+          <img src="375.jpg" alt="Class 375 Electrostar" style="width:600px;height: 340px;;">
+          </a>
+          <a href="390.HTML">
+            <img src="390.jpg" alt="Class 390 Pendolino" style=width:600px;height:340px;>
+            </a>
+<br>
+<h2>Please complete this form!</h2>
+<p>This form is your opportunity for you to tell me your opinions!</p>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="TrainClass">Train Class</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="TrainClass" name="TrainClass" placeholder="the train which you have an opinion of">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Continent">Continent</label>
+    </div>
+    <div class="col-75">
+      <select id="Continent" name="Continent">
+        <option value="undefined">Choose a Continent</option>
+        <option value="europe">Europe</option>
+        <option value="asia">Asia</option>
+        <option value="north america">North America</option>
+        <option value="south america">South America</option>
+        <option value="oceania">Oceania</option>
+        <option value="Africa">Africa</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="opinions">Opinions
+
+      </label>
+    </div>
+    <div class="col-75">
+      <textarea id="opinions" name="opinions" placeholder="Write something about your train.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" onclick="submit()" value="Submit">
+    <script>
+    function button(){
+        alert("thank you" + fname + "for submitting your thoughts! it is greatly appreciated!");
+      }
+    </script>
+  </div>
+  </form>
+</div>
+</html>
